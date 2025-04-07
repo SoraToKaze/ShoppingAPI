@@ -9,6 +9,7 @@ import AllCustomer from './Layouts/Customer/AllCustomer';
 import SingleCustomer from './Layouts/Customer/SingleCustomer';
 import AllOrderStatus from './Layouts/Order/AllOrderStatus';
 import SingleOrderStatus from './Layouts/Order/SingleOrderStatus';
+import OrderDetails from './Layouts/Order/OrderDetails';
 
 // WHEN creating routes, make sure to place them 
 // BEFORE the FourOhFour page
@@ -24,6 +25,7 @@ function App() {
           <Route path="customer/:id" element={<SingleCustomer />}/>
           <Route path="order" element={<AllOrderStatus />} />
           <Route path="status/:id" element={<SingleOrderStatus />} />
+          <Route path="order/:id" element={<OrderDetails />} />
           <Route path="*" element={<FourOhFour />} />
         </Route>
       </Routes>
